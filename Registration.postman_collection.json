@@ -1,0 +1,1154 @@
+{
+	"info": {
+		"_postman_id": "b0b7bb1d-bb49-464f-85a6-6a6241422a68",
+		"name": "Registration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20459953"
+	},
+	"item": [
+		{
+			"name": "R1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test0@yahoo.com\",\r\n    \"name\": \" Anna\",\r\n    \"password\": \"100\"\r\n}"
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "R1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test00@yahoo.com\",\r\n    \"name\": \" Ann\",\r\n    \"password\": \"100\"\r\n}"
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/doregister",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"doregister"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 Jun 2022 10:52:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \" Ann\",\n    \"avatar\": \"http://users.bugred.ru//tmp/default_avatar.jpg\",\n    \"password\": \"643c30f73a3017050b287794fc8c5bb9ab06b9ce38a1fc58df402a8b66ff58f69bf0a606ae17585352a0306f0e9752de8c5c064aed7003f52808b43ff992a603\",\n    \"birthday\": 0,\n    \"email\": \"test00@yahoo.com\",\n    \"gender\": \"\",\n    \"date_start\": 0,\n    \"hobby\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "R2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test1@yahoo.com\",\r\n    \"password\": \"101\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "R2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test1@yahoo.com\",\r\n    \"password\": \"101\"\r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/doregister",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"doregister"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 Jun 2022 10:49:36 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"type\": \"error\",\n    \"message\": \"Параметр name является обязательным!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "R3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test5@yahoo.com\",\r\n    \"name\": \" Kate\",\r\n    \r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "R3",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test5@yahoo.com\",\r\n    \"name\": \" Kate\",\r\n    \r\n    \r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/doregister",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"doregister"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 Jun 2022 10:49:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"type\": \"error\",\n    \"message\": \"Параметр email является обязательным!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "R4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \" Lily\",\r\n    \"password\": \"101\",\r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "R4",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \" Lily\",\r\n    \"password\": \"101\",\r\n    \r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/doregister",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"doregister"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 Jun 2022 10:48:42 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"type\": \"error\",\n    \"message\": \"Параметр email является обязательным!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "R5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test6@yahoo.com\"\r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "R5",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test6@yahoo.com\"\r\n    \r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/doregister",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"doregister"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 Jun 2022 10:49:51 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"type\": \"error\",\n    \"message\": \"Параметр name является обязательным!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "R6",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"password\": \"105\"\r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "R6",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"105\"\r\n    \r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/doregister",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"doregister"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 Jun 2022 10:50:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"type\": \"error\",\n    \"message\": \"Параметр email является обязательным!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "R7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test00@yahoo.com\",\r\n    \"name\": \" Gigy\",\r\n    \"password\": \"102\"\r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "R7",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test00@yahoo.com\",\r\n    \"name\": \" Gigy\",\r\n    \"password\": \"102\"\r\n    \r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/doregister",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"doregister"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 Jun 2022 10:53:21 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"type\": \"error\",\n    \"message\": \" email test00@yahoo.com уже есть в базе\"\n}"
+				}
+			]
+		},
+		{
+			"name": "R8",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test4@yahoo.com\",\r\n    \"name\": \" Ann\",\r\n    \"password\": \"103\"\r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "R8",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test4@yahoo.com\",\r\n    \"name\": \" Ann\",\r\n    \"password\": \"103\"\r\n    \r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/doregister",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"doregister"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 Jun 2022 10:54:01 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"type\": \"error\",\n    \"message\": \" Текущее ФИО  Ann уже есть в базе\"\n}"
+				}
+			]
+		},
+		{
+			"name": "R9",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test8@yahoo.com\",\r\n    \"name\": \" Lordy\",\r\n    \"password\": \"103\"\r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "R9",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test8@yahoo.com\",\r\n    \"name\": \" Lordy\",\r\n    \"password\": \"103\"\r\n    \r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/doregister",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"doregister"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 Jun 2022 10:54:24 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"name\": \" Lordy\",\n    \"avatar\": \"http://users.bugred.ru//tmp/default_avatar.jpg\",\n    \"password\": \"947de04bfae0bf062a66fc055d4c284c9779793d9bd58833ee7549fde1ff1effaf7aefdbc6c90ed0ac86c0acc82329e7c057d900c28ea7ed4724486f717ee38d\",\n    \"birthday\": 0,\n    \"email\": \"test8@yahoo.com\",\n    \"gender\": \"\",\n    \"date_start\": 0,\n    \"hobby\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "R10",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "R10",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/doregister",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"doregister"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 Jun 2022 10:55:21 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"type\": \"error\",\n    \"message\": \"Параметр email является обязательным!\"\n}"
+				}
+			]
+		},
+		{
+			"name": "R11",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test9@yahoo.com\",\r\n    \"name\": 123,\r\n    \"password\": \"110\"\r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "R11",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test9@yahoo.com\",\r\n    \"name\": 123,\r\n    \"password\": \"110\"\r\n    \r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/doregister",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"doregister"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 Jun 2022 09:09:28 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "PHPSESSID=45834a68164c8a7cfe1a4b6296f46fd3; path=/; HttpOnly"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"type\": \"error\",\n    \"message\": \"поле фио является обязательным\"\n}"
+				}
+			]
+		},
+		{
+			"name": "R12",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"test10@yahoo.com\",\r\n    \"name\": Jennifer,\r\n    \"password\": 111\r\n    \r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "R12",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test10@yahoo.com\",\r\n    \"name\": Jennifer,\r\n    \"password\": 111\r\n    \r\n}\r\n"
+						},
+						"url": {
+							"raw": "http://users.bugred.ru/tasks/rest/doregister",
+							"protocol": "http",
+							"host": [
+								"users",
+								"bugred",
+								"ru"
+							],
+							"path": [
+								"tasks",
+								"rest",
+								"doregister"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.10.0"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 23 Jun 2022 09:20:14 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.14"
+						},
+						{
+							"key": "Expires",
+							"value": "Thu, 19 Nov 1981 08:52:00 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-store, no-cache, must-revalidate, post-check=0, pre-check=0"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"type\": \"error\",\n    \"message\": \"Параметр email является обязательным!\"\n}"
+				}
+			]
+		}
+	]
+}
